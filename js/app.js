@@ -10,6 +10,7 @@ $(() => { // START JQUERY
 
     let userInput = $('input[type="text"]').val()
 
+    let link = `https://ghibliapi.herokuapp.com/${userInput}`
     let linkFilms = `https://ghibliapi.herokuapp.com/films`
     let linkPeople = `https://ghibliapi.herokuapp.com/people`
     let linkLocations = `https://ghibliapi.herokuapp.com/locations`
@@ -18,7 +19,7 @@ $(() => { // START JQUERY
 
     $.ajax(
       {
-        url: linkPeople,
+        url: link,
         type: 'GET',
         data: userInput
       }
