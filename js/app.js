@@ -31,11 +31,16 @@ $(() => { // START JQUERY
           for (object of data) {
 
             let title = object.title
-            // console.log(object.title); // RETURNS ALL TITLES OF FILMS
+            // console.log(title); // RETURNS ALL TITLES OF FILMS
             // PUSH THE TITLES INTO li
-            $('dd').append(.each(object.title))
+            let people = object.linkPeople
+            console.log(people);
+          for (let i = 0; i < 1; i++) {
+            const $li = $('<li>').text(title)
+            $('.titles').append($li)
 
           }
+        }
       },
       (error) => {
         console.log('Error: Ghibli not found');
@@ -47,3 +52,8 @@ $(() => { // START JQUERY
 // IF INPUT TYPE TEXT === TITLE, SHOW SINGLE FILM DATA SEARCHED BY TITLE
 // ELSE IF TEXT === FILMS, SHOW ALL GHIBLI FILMS
 // ELSE IF TEXT ===
+
+
+// let titleArr = []
+// titleArr.push(title)
+// console.log(titleArr);
