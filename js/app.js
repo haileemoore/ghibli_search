@@ -29,22 +29,11 @@ $(() => { // START JQUERY
         (data) => {
           // $('single-film-data').html(data.title);
           for (object of data) {
-                console.log(data);
-          }
-        const $data = data
-        // console.log(data);
 
-          for (let i =0; i < userInput; i++) {
-            const $table = $('<table>')
-            const $th = $('<th>')
-            const $tr = $('<tr>')
-            const $td = $('films').html(data[i].films);
-            const $td1 = $('people').html(data[i].people);
-            const $td2 = ('locations').html(data[i].locations);
-            const $td3 = $('species').html(data[i].species);
-            const $td4 = $('vehicles').html(data[i].vehicles);
-            $table.append($td, $td1, $td2, $td3, $td4)
-            $th.append($td, $td1, $td2, $td3, $td4)
+            let title = object.title
+            // console.log(object.title); // RETURNS ALL TITLES OF FILMS
+            // PUSH THE TITLES INTO li
+            $('dd').append(.each(object.title))
 
           }
       },
