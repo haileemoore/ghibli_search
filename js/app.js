@@ -31,7 +31,7 @@ $(() => { // START JQUERY
           for (object of data) {
           // PUSH THE TITLES INTO li
             let title = object.title
-            console.log(title); // RETURNS ALL TITLES OF FILMS
+            // console.log(title); // RETURNS ALL TITLES OF FILMS
             let people = object.name
             // console.log(people);
             let locations = object.name
@@ -49,21 +49,43 @@ $(() => { // START JQUERY
 
 
             // IF USERINPUT === FILMS
-            $('.titles').append($liTitles)
-
-            // ELSE IF === PEOPLE
-            $('.people').append($liPeople)
-
-            // ELSE IF === LOCATIONS
-            $('.locations').append($liLocate)
-
-            // ELSE IF === SPECIES
-            $('.species').append($liSpecies)
-
-            // ELSE IF === VEHICLES
-            $('.vehicles').append($liVehicles)
-          }
-        }
+            if (userInput === 'films') {
+              $('.titles').append($liTitles)
+              $('.people').hide()
+              $('.locations').hide()
+              $('.species').hide()
+              $('.vehicles').hide()
+            } else if (userInput === 'people') {
+              // ELSE IF === PEOPLE
+              $('.people').append($liPeople)
+              $('.titles').hide()
+              $('.locations').hide()
+              $('.species').hide()
+              $('.vehicles').hide()
+            } else if (userInput === 'locations') {
+              // ELSE IF === LOCATIONS
+              $('.locations').append($liLocate)
+              $('.titles').hide()
+              $('.people').hide()
+              $('.species').hide()
+              $('.vehicles').hide()
+            } else if (userInput === 'species') {
+              // ELSE IF === SPECIES
+              $('.species').append($liSpecies)
+              $('.titles').hide()
+              $('.people').hide()
+              $('.locations').hide()
+              $('.vehicles').hide()
+            } else if (userInput === 'vehicles') {
+              // ELSE IF === VEHICLES
+              $('.vehicles').append($liVehicles)
+              $('.titles').hide()
+              $('.people').hide()
+              $('.locations').hide()
+              $('.species').hide()
+            } // END OF IF..ELSE IF
+          } // END OF FOR LOOP
+        } // END OF FOR..OF LOOP
       },
       (error) => {
         console.log('Error: Ghibli not found');
