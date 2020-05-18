@@ -1,5 +1,35 @@
 * {
-  background-color: gainsboro;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+img {
+height: 700px;
+width: 900px;
+opacity: 100%;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  align-self: flex-end;
+  padding: 20px;
+  background-color: black;
+  font-size: 30px;
+}
+
+
+.form-ctnr {
+  position: absolute;
+  top: 40%;
+  align-self: flex-end;
+  color: black;
 }
 
 input {
@@ -14,4 +44,8 @@ button {
   width: 80px;
   background-color: black;
   color: white;
+}
+
+button:hover {
+  background-color: #f25252;
 }
