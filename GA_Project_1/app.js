@@ -1,6 +1,36 @@
 // console.log('test');
 // API : https://ghibliapi.herokuapp.com
 
+$(() => {
+    // SET IMAGE START - CYCLE
+    let currentImgIndex = 0;
+    console.log(currentImgIndex);
+    // CAROUSEL LENGTH
+    const numOfImages = $('.images-carousel').children().length - 1
+    console.log(numOfImages);
+
+    // NEXT BUTTON
+    $('.forward').on('click', () => {
+        $('.images-carousel').children().eq(currentImgIndex).css('display', 'none')
+        if(currentImgIndex < numOfImages) {
+          currentImgIndex ++;
+        } else {
+          currentImgIndex = 0;
+        }
+        $('.images-carousel').children().eq(currentImgIndex).css('display', 'block')
+    })
+
+    $('.previous').on('click', () => {
+      $('.images-carousel').children().eq(currentImgIndex).css('display', 'none')
+      if (currentImgIndex > 0) {
+        currentImgIndex --;
+      } else {
+        currentImgIndex = numOfImages;
+      }
+      $('.images-carousel').children().eq(currentImgIndex).css('display', 'block')
+    })
+  })
+
 
 $(() => { // START JQUERY
 
@@ -17,7 +47,6 @@ $(() => { // START JQUERY
     // let linkLocations = `https://ghibliapi.herokuapp.com/locations`
     // let linkSpecies = `https://ghibliapi.herokuapp.com/species`
     // let linkVehicles = `https://ghibliapi.herokuapp.com/vehicles`
-
 
     $.ajax(
       {
@@ -86,6 +115,7 @@ $(() => { // START JQUERY
             } // END OF IF..ELSE IF
           } // END OF FOR LOOP
         } // END OF FOR..OF LOOP
+
       },
       (error) => {
         console.log('Error: Ghibli not found');
