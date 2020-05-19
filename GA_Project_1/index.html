@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>GHIBLI</title>
     <!-- CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Users/haileedoyle/Desktop/Code/Projects/haileedoyle.github.io/GA_Project_1/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <!-- JQUERY JS -->
@@ -12,12 +13,45 @@
   </head>
   <body>
     <div class="container">
-      <div class="carousel-container">
-        <div class="previous">
-          <button type="button" name="back">BACK</button>
+      <div class="title">
+        <h1>GHIBLI ジブリ</h1>
+      </div>
+      <div class="about">
+
+      </div>
+      <div class="form-ctnr">
+        <div class="form">
+          <input type="text" placeholder="Ghibli Search"></input>
+          <button type="button" name="Go">GO</button>
         </div>
-        <div class="forward">
-          <button type="button" name="next">NEXT</button>
+        <h3>SEARCH FOR:</h3>
+        <div class="output">
+          <div class="titles">
+            <h4>FILMS</h4>
+          </div>
+          <div class="people">
+            <h4>PEOPLE</h4>
+          </div>
+          <div class="locations">
+            <h4>LOCATIONS</h4>
+          </div>
+          <div class="species">
+            <h4>SPECIES</h4>
+          </div>
+          <div class="vehicles">
+            <h4>VEHICLES</h4>
+          </div>
+         </div>  <!-- END OF OUTPUT DIV-->
+        </div> <!-- END OF FORM-CTNR DIV-->
+      </div> <!-- END OF CONTAINER DIV-->
+      <div class="carousel-container">
+        <div class="carousel-buttons">
+          <div class="previous">
+            <button type="button" name="back">BACK</button>
+          </div>
+          <div class="forward">
+            <button type="button" name="next">NEXT</button>
+          </div>
         </div>
         <div class="images-carousel">
           <img src="https://i.imgur.com/z8bCrgR.jpg" alt="studio ghibli">
@@ -40,36 +74,5 @@
           <img src="https://imgur.com/sCNoxPe.jpg" alt="spirited away">
         </div>
       </div>
-      <div class="title">
-        <h1>GHIBLI ジブリ</h1>
-      </div>
-      <div class="about">
-
-      </div>
-      <div class="form-ctnr">
-        <div class="form">
-          <input type="text" placeholder="Ghibli Search"></input>
-          <button type="button" name="Go">GO</button>
-        </div>
-        <h3>TYPE ANY OF BELOW FILTERS INTO SEARCH TO BEGIN YOUR EXPLORATION</h3>
-        <div class="output">
-          <div class="titles">
-            <h4>FILMS</h4>
-          </div>
-          <div class="people">
-            <h4>PEOPLE</h4>
-          </div>
-          <div class="locations">
-            <h4>LOCATIONS</h4>
-          </div>
-          <div class="species">
-            <h4>SPECIES</h4>
-          </div>
-          <div class="vehicles">
-            <h4>VEHICLES</h4>
-          </div>
-         </div>  <!-- END OF OUTPUT DIV-->
-        </div> <!-- END OF FORM-CTNR DIV-->
-      </div> <!-- END OF CONTAINER DIV-->
   </body>
 </html>
