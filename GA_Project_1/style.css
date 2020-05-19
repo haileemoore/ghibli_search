@@ -9,19 +9,38 @@
   margin: 30px;
 }
 
-img {
-height: 700px;
-width: 900px;
-opacity: 100%;
+.carousel-container {
+  width: 90%;
+  display: flex;
+}
+
+.images-carousel {
+  width: 50%;
+  padding: 10px;
+}
+
+.images-carousel img {
+  width: 100%;
+}
+
+.carousel-container button {
+  align-self: center;
+  color: #888;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 .title {
   position: absolute;
   color: white;
   align-self: flex-end;
-  padding: 20px;
   background-color: black;
   font-size: 30px;
+  margin: 10px;
+  height: 150px;
+  width: 400px;
+  text-align: center;
 }
 
 
@@ -35,7 +54,7 @@ opacity: 100%;
 input {
   height: 30px;
   width: 300px;
-  background-color: white;;
+  background-color: white;
   color: black;
 }
 
