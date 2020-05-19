@@ -34,7 +34,7 @@ $(() => {
 
 $(() => { // START JQUERY
 
-  $('button').on('click', (event) => {
+  $('.form').on('click', (event) => {
 
     event.preventDefault(); // PREVENT IMMEDIATE PAGE REFRESH
 
