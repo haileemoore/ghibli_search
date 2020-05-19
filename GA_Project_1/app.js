@@ -4,10 +4,10 @@
 $(() => {
     // SET IMAGE START - CYCLE
     let currentImgIndex = 0;
-    console.log(currentImgIndex);
+    // console.log(currentImgIndex);
     // CAROUSEL LENGTH
     const numOfImages = $('.images-carousel').children().length - 1
-    console.log(numOfImages);
+    // console.log(numOfImages);
 
     // NEXT BUTTON
     $('.forward').on('click', () => {
