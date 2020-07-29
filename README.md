@@ -2,7 +2,7 @@
 General Assembly - First Project
 
 ## Live Site
-https://haileedoyle.github.io/GA_Project_1/
+https://haileedoyle.github.io/ghibli_search/
 
 ## Purpose
 User can search the creations of Hayao Miyazaki's, Studio Ghibli. 
